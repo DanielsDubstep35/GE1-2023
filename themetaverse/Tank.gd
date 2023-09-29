@@ -53,7 +53,3 @@ func _process(delta):
 
 		
 	_drawGizmos()
-	
-	
-	
-	

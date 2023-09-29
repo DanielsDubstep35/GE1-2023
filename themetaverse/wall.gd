@@ -6,7 +6,7 @@ extends Node3D
 
 @export var width = 10
 @export var height = 10
-
+@export var color = Color()
 @export var brickScene:PackedScene
 
 
@@ -23,7 +23,7 @@ func _ready():
 			
 			var newMaterial = StandardMaterial3D.new()
 			
-			newMaterial.albedo_color = Color.from_hsv(randf_range(0, 1), 1, 1, 0.8)
+			newMaterial.albedo_color = color # Color.from_hsv(randf_range(0, 1), 1, 1, 0.8)
 			brick.get_node("MeshInstance3D").material_override = newMaterial
 			
 			add_child(brick)

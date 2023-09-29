@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://b5d5lkpk8f7y2"]
+
+[ext_resource type="Script" path="res://Tank1.gd" id="1_udwaa"]
+[ext_resource type="Script" path="res://wall.gd" id="2_nc16b"]
+[ext_resource type="PackedScene" uid="uid://dgdftd477pkju" path="res://brick.tscn" id="3_ye7wa"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ie26i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sflma"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mj7kv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gxiu6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7cuo4"]
+albedo_color = Color(0, 0, 1, 1)
+
+[node name="Root" type="Node3D"]
+
+[node name="Ground" type="Node3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("PlaneMesh_ie26i")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_sflma")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Ground/MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_mj7kv")
+
+[node name="Tank" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.756672, -2.63917e-16, 2.63917e-16, 2.63917e-16, 0.756672, -2.63917e-16, -2.63917e-16, 2.63917e-16, 0.756672, -0.321487, 0.736827, -0.0676988)
+script = ExtResource("1_udwaa")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Tank"]
+transform = Transform3D(1, -2.29376e-24, 5.48751e-25, 5.4875e-25, 1, -5.48751e-25, -2.29376e-24, 2.29376e-24, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = SubResource("BoxMesh_gxiu6")
+surface_material_override/0 = SubResource("StandardMaterial3D_7cuo4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tank"]
+transform = Transform3D(1, -2.29376e-24, 5.48751e-25, 5.4875e-25, 1, -5.48751e-25, -2.29376e-24, 2.29376e-24, 1, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 3.76431, 8.33825)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.99752, 0.0169677, -0.0683074, 2.23065e-09, 0.970506, 0.241075, 0.0703833, -0.240477, 0.9681, 0, 1.91592, 0)
+
+[node name="wall" type="Node3D" parent="."]
+script = ExtResource("2_nc16b")
+color = Color(0.941176, 0.423529, 0.258824, 1)
+brickScene = ExtResource("3_ye7wa")
