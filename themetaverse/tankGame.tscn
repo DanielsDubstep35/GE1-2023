@@ -1,12 +1,38 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=11 format=3 uid="uid://bsd26l7esfabd"]
+=======
+[gd_scene load_steps=53 format=3 uid="uid://bsd26l7esfabd"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://wall.gd" id="2"]
+<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://CamFollow.gd" id="2_lqmp0"]
 [ext_resource type="PackedScene" uid="uid://bsmshwh5fdw1y" path="res://Box.tscn" id="4"]
+=======
+[ext_resource type="Environment" path="res://seek_environment..tres" id="2_jagpw"]
+[ext_resource type="PackedScene" path="res://Box.tscn" id="4"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" path="res://SceneSwitcher.tscn" id="5"]
 [ext_resource type="Material" path="res://Ground.tres" id="5_m2ykm"]
 [ext_resource type="PackedScene" uid="uid://dsoyb1m4o4ieh" path="res://tank.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://b4pok7xvls88x" path="res://bullet1.tscn" id="7_yhs48"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Script" path="res://AITank.gd" id="8_ddqjx"]
+[ext_resource type="Material" uid="uid://cywwa2imvl6rv" path="res://Tank Material.tres" id="9_oqvfe"]
+[ext_resource type="Script" path="res://circles_of_things.gd" id="10_njqh7"]
+[ext_resource type="PackedScene" uid="uid://dajk1oava0d0c" path="res://dod.tscn" id="11_8cpsu"]
+[ext_resource type="PackedScene" path="res://dod_physics.tscn" id="12_yglxe"]
+[ext_resource type="Script" path="res://AITank5.gd" id="14_vupkl"]
+[ext_resource type="PackedScene" uid="uid://dsoyb1m4o4ieh" path="res://tank.tscn" id="15_x7mrl"]
+[ext_resource type="Script" path="res://AITank3.gd" id="16_ae0c1"]
+[ext_resource type="Script" path="res://AITank4.gd" id="17_c7557"]
+[ext_resource type="Script" path="res://AITank6.gd" id="18_4uj2i"]
+[ext_resource type="Script" path="res://AITank7.gd" id="19_fpxqh"]
+[ext_resource type="Script" path="res://AITank8.gd" id="20_ox4cn"]
+[ext_resource type="Script" path="res://AITank9.gd" id="21_popj6"]
+[ext_resource type="Script" path="res://AITank10.gd" id="22_u1crs"]
+>>>>>>> Stashed changes
 
 [sub_resource type="Environment" id="5"]
 background_mode = 1
@@ -21,6 +47,79 @@ ssil_enabled = true
 
 [sub_resource type="PlaneMesh" id="2"]
 
+<<<<<<< Updated upstream
+=======
+[sub_resource type="BoxMesh" id="1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2mivd"]
+
+[sub_resource type="BoxMesh" id="6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w0fv0"]
+size = Vector3(0.25, 0.25, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dmb55"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xfjra"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cue3m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ub0hq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eft8v"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_elqsn"]
+size = Vector3(0.25, 0.25, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2w6ci"]
+albedo_color = Color(0, 0.333333, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ghpt"]
+albedo_color = Color(0, 0.333333, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uici"]
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mk3d"]
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0mom"]
+albedo_color = Color(0, 0.0666667, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_idtw3"]
+albedo_color = Color(0, 0.0666667, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qadw3"]
+albedo_color = Color(0.576471, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyhc8"]
+albedo_color = Color(0.576471, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd2pr"]
+albedo_color = Color(1, 0.313726, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kt8ny"]
+albedo_color = Color(1, 0.313726, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ntrvt"]
+albedo_color = Color(0.47451, 0.309804, 0.12549, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fb7tf"]
+albedo_color = Color(0.647059, 0.309804, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ewprj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xyjio"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_15uwl"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbx7m"]
+albedo_color = Color(0, 0, 0, 1)
+
+>>>>>>> Stashed changes
 [node name="root" type="Node3D"]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
@@ -58,12 +157,20 @@ mesh = SubResource("2")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("5_m2ykm")
 
+<<<<<<< Updated upstream
 [node name="tank" parent="." instance=ExtResource("6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.021)
 motion_mode = 1
 rotSpeed = 3.0
 fireRate = 2
+=======
+[node name="tank" type="CharacterBody3D" parent="." node_paths=PackedStringArray("AITank")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.021)
+motion_mode = 1
+script = ExtResource("7_3p3kj")
+>>>>>>> Stashed changes
 bulletPrefab = ExtResource("7_yhs48")
+AITank = NodePath("../tank2")
 
 [node name="camTarget" parent="tank" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -10)
@@ -76,4 +183,192 @@ offset_top = 83.0
 offset_right = 286.0
 offset_bottom = 183.0
 
+<<<<<<< Updated upstream
 [editable path="tank"]
+=======
+[node name="Timer" type="Timer" parent="tank"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="tank"]
+
+[node name="Turret" type="MeshInstance3D" parent="tank/CharacterBody3D"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 2, 0, 0.625, 1)
+mesh = SubResource("6")
+skeleton = NodePath("../../tankMesh")
+surface_material_override/0 = ExtResource("9_oqvfe")
+
+[node name="bulletSpawn" type="Node3D" parent="tank/CharacterBody3D/Turret"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.679319)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tank/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625, 1)
+shape = SubResource("BoxShape3D_w0fv0")
+
+[node name="genart1" type="Marker3D" parent="."]
+transform = Transform3D(0.946913, 0.321489, -1.49012e-08, -0.276459, 0.814281, 0.510408, 0.164091, -0.483312, 0.859932, 10.8847, 12.7131, -18.1712)
+script = ExtResource("10_njqh7")
+dod = ExtResource("11_8cpsu")
+
+[node name="genart2" type="Marker3D" parent="."]
+transform = Transform3D(-0.474119, -0.577538, 0.664575, -0.276459, 0.814281, 0.510408, -0.835931, 0.058267, -0.545732, -31.0351, 15.1569, -12.222)
+script = ExtResource("10_njqh7")
+dod = ExtResource("12_yglxe")
+
+[node name="tank2" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.24969)
+motion_mode = 1
+script = ExtResource("8_ddqjx")
+speed = 5.0
+radius = 20.0
+num_waypoints = 12
+
+[node name="camTarget" type="Node3D" parent="tank2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25501, -2.55356)
+
+[node name="tankMesh" type="MeshInstance3D" parent="tank2"]
+mesh = SubResource("BoxMesh_dmb55")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xfjra")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tank2"]
+shape = SubResource("BoxShape3D_cue3m")
+
+[node name="Timer" type="Timer" parent="tank2"]
+process_mode = 3
+process_callback = 0
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="tank2"]
+
+[node name="Turret" type="MeshInstance3D" parent="tank2/CharacterBody3D"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 2, 0, 0.625, 1)
+mesh = SubResource("BoxMesh_ub0hq")
+skeleton = NodePath("../../tankMesh")
+surface_material_override/0 = SubResource("StandardMaterial3D_eft8v")
+
+[node name="bulletSpawn" type="Node3D" parent="tank2/CharacterBody3D/Turret"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.679319)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tank2/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625, 1)
+shape = SubResource("BoxShape3D_elqsn")
+
+[node name="tank3" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.08165e-12, 3.25)
+script = ExtResource("16_ae0c1")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank3" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2w6ci")
+
+[node name="Turret" parent="tank3/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5ghpt")
+
+[node name="tank4" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.08165e-12, 3.25)
+script = ExtResource("17_c7557")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank4" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6uici")
+
+[node name="Turret" parent="tank4/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_8mk3d")
+
+[node name="tank5" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.08165e-12, 3.25)
+script = ExtResource("14_vupkl")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank5" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_i0mom")
+
+[node name="Turret" parent="tank5/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_idtw3")
+
+[node name="tank6" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2.08165e-12, 3.25)
+script = ExtResource("18_4uj2i")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank6" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qadw3")
+
+[node name="Turret" parent="tank6/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_yyhc8")
+
+[node name="tank7" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2.08165e-12, 3.25)
+script = ExtResource("19_fpxqh")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank7" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sd2pr")
+
+[node name="Turret" parent="tank7/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_kt8ny")
+
+[node name="tank8" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2.08165e-12, 3.25)
+script = ExtResource("20_ox4cn")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank8" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ntrvt")
+
+[node name="Turret" parent="tank8/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_fb7tf")
+
+[node name="tank9" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2.08165e-12, 3.25)
+script = ExtResource("21_popj6")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank9" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ewprj")
+
+[node name="Turret" parent="tank9/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_xyjio")
+
+[node name="tank10" parent="." instance=ExtResource("15_x7mrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 2.08165e-12, 3.25)
+script = ExtResource("22_u1crs")
+speed = 5.0
+forward_movement = true
+radius = 20.0
+num_waypoints = 12
+
+[node name="tankMesh" parent="tank10" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_15uwl")
+
+[node name="Turret" parent="tank10/CharacterBody3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_mbx7m")
+
+[editable path="tank3"]
+[editable path="tank4"]
+[editable path="tank5"]
+[editable path="tank6"]
+[editable path="tank7"]
+[editable path="tank8"]
+[editable path="tank9"]
+[editable path="tank10"]
+>>>>>>> Stashed changes

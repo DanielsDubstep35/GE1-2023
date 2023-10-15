@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://cpg5h3e60f4bg" path="res://green.tres" id="1_4wjot"]
 [ext_resource type="Script" path="res://tank1.gd" id="2_n83ob"]
-[ext_resource type="Material" path="res://Tank Material.tres" id="2_y21kj"]
+[ext_resource type="Material" uid="uid://cywwa2imvl6rv" path="res://Tank Material.tres" id="2_y21kj"]
 [ext_resource type="Script" path="res://wall.gd" id="3_rwbqd"]
 [ext_resource type="PackedScene" uid="uid://c6xhwirvnwrnp" path="res://brick.tscn" id="4_rtrnv"]
 
@@ -55,7 +55,7 @@ mesh = SubResource("BoxMesh_0b5tn")
 surface_material_override/0 = SubResource("StandardMaterial3D_ocwap")
 
 [node name="turret" type="CharacterBody3D" parent="tank"]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 2, 0, 0.55, 1)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.55, 1)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="tank/turret"]
 mesh = SubResource("BoxMesh_uunry")
