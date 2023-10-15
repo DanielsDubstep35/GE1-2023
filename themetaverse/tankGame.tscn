@@ -1,23 +1,12 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=11 format=3 uid="uid://bsd26l7esfabd"]
-=======
 [gd_scene load_steps=53 format=3 uid="uid://bsd26l7esfabd"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://wall.gd" id="2"]
-<<<<<<< Updated upstream
-[ext_resource type="Script" path="res://CamFollow.gd" id="2_lqmp0"]
-[ext_resource type="PackedScene" uid="uid://bsmshwh5fdw1y" path="res://Box.tscn" id="4"]
-=======
 [ext_resource type="Environment" path="res://seek_environment..tres" id="2_jagpw"]
 [ext_resource type="PackedScene" path="res://Box.tscn" id="4"]
->>>>>>> Stashed changes
 [ext_resource type="PackedScene" path="res://SceneSwitcher.tscn" id="5"]
 [ext_resource type="Material" path="res://Ground.tres" id="5_m2ykm"]
 [ext_resource type="PackedScene" uid="uid://dsoyb1m4o4ieh" path="res://tank.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://b4pok7xvls88x" path="res://bullet1.tscn" id="7_yhs48"]
-<<<<<<< Updated upstream
-=======
 [ext_resource type="Script" path="res://AITank.gd" id="8_ddqjx"]
 [ext_resource type="Material" uid="uid://cywwa2imvl6rv" path="res://Tank Material.tres" id="9_oqvfe"]
 [ext_resource type="Script" path="res://circles_of_things.gd" id="10_njqh7"]
@@ -32,7 +21,6 @@
 [ext_resource type="Script" path="res://AITank8.gd" id="20_ox4cn"]
 [ext_resource type="Script" path="res://AITank9.gd" id="21_popj6"]
 [ext_resource type="Script" path="res://AITank10.gd" id="22_u1crs"]
->>>>>>> Stashed changes
 
 [sub_resource type="Environment" id="5"]
 background_mode = 1
@@ -47,8 +35,6 @@ ssil_enabled = true
 
 [sub_resource type="PlaneMesh" id="2"]
 
-<<<<<<< Updated upstream
-=======
 [sub_resource type="BoxMesh" id="1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2mivd"]
@@ -119,7 +105,6 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbx7m"]
 albedo_color = Color(0, 0, 0, 1)
 
->>>>>>> Stashed changes
 [node name="root" type="Node3D"]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
@@ -157,18 +142,10 @@ mesh = SubResource("2")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("5_m2ykm")
 
-<<<<<<< Updated upstream
-[node name="tank" parent="." instance=ExtResource("6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.021)
-motion_mode = 1
-rotSpeed = 3.0
-fireRate = 2
-=======
 [node name="tank" type="CharacterBody3D" parent="." node_paths=PackedStringArray("AITank")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.021)
 motion_mode = 1
 script = ExtResource("7_3p3kj")
->>>>>>> Stashed changes
 bulletPrefab = ExtResource("7_yhs48")
 AITank = NodePath("../tank2")
 
@@ -183,9 +160,6 @@ offset_top = 83.0
 offset_right = 286.0
 offset_bottom = 183.0
 
-<<<<<<< Updated upstream
-[editable path="tank"]
-=======
 [node name="Timer" type="Timer" parent="tank"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="tank"]
@@ -371,4 +345,3 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mbx7m")
 [editable path="tank8"]
 [editable path="tank9"]
 [editable path="tank10"]
->>>>>>> Stashed changes

@@ -8,7 +8,7 @@ extends Node3D
 @export var num_loops = 10
 
 func _ready():
-	
+
 	var radius = 1
 	for i in range(1, loops + 1):
 		var numPrefabs = 2.0 * PI * i * radius
@@ -19,16 +19,15 @@ func _ready():
 			var z = cos(angle) * radius * i * 1.1
 			var james = dod.instantiate()
 			james.transform.origin = Vector3(x, 0, z)
-			
+
 			var newMaterial = StandardMaterial3D.new()
-			
+
 			var h = j / numPrefabs
 			newMaterial.albedo_color = Color.from_hsv(h, 1, 1, h)
 			james.get_node("MeshInstance3D").material_override = newMaterial
-			
+
 			add_child(james)
-			
+
 func _process(delta):
 	DebugDraw.draw_sphere(transform.origin, r, Color.BLUE)
-	
 
