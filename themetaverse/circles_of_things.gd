@@ -1,33 +1,36 @@
-@tool
 extends Node3D
 
 @export var dod:PackedScene
 
-@export var loops = 10.0
+@export var num_dod = 10.0
 @export var r = 10.0
 @export var num_loops = 10
 
 func _ready():
 
-	var radius = 1
-	for i in range(1, loops + 1):
-		var numPrefabs = 2.0 * PI * i * radius
-		var theta = PI * 2.0 / numPrefabs
-		for j in numPrefabs:
-			var angle  = j * theta
-			var x = sin(angle) * radius * i * 1.1
-			var z = cos(angle) * radius * i * 1.1
+	var theta_inc = (PI * 2.0) / num_dod
+
+	for j in num_loops:
+		num_dod = 2.0 * PI * (j + 1)
+		r= j
+		for i in num_dod:
 			var james = dod.instantiate()
-			james.transform.origin = Vector3(x, 0, z)
+			var theta = theta_inc * i
+			var pos = Vector3(sin(theta) * r, 0, cos(theta) * r)
+
+			james.transform.origin = pos
 
 			var newMaterial = StandardMaterial3D.new()
 
-			var h = j / numPrefabs
-			newMaterial.albedo_color = Color.from_hsv(h, 1, 1, h)
+			var h = i / num_dod
+			print(h)
+			newMaterial.albedo_color = Color.from_hsv(h, 1, 1, 0.8)
 			james.get_node("MeshInstance3D").material_override = newMaterial
 
 			add_child(james)
 
 func _process(delta):
 	DebugDraw.draw_sphere(transform.origin, r, Color.BLUE)
+
+
 

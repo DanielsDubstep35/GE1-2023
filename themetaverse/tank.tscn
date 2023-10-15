@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://dsoyb1m4o4ieh"]
 
-[ext_resource type="PackedScene" path="res://bullet.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://co8hbh88amgo1" path="res://bullet.tscn" id="1"]
 [ext_resource type="Script" path="res://Tank.gd" id="3"]
-[ext_resource type="Material" uid="uid://cywwa2imvl6rv" path="res://Tank Material.tres" id="3_wdivp"]
+[ext_resource type="Material" path="res://Tank Material.tres" id="3_wdivp"]
 
 [sub_resource type="BoxMesh" id="1"]
 
